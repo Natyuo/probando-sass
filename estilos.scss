@@ -1,0 +1,30 @@
+@import 'footer';
+
+$celeste: skyblue;
+$rojo: red;
+$patito: yellow;
+
+body {
+    background-color: $rojo;
+}
+
+
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    &-item {
+flex-grow: 1;
+&_link {
+    display: block;
+    background-color: tomato;
+    color: beige;
+    text-align: center;
+        padding: 8px 0;
+        &:hover {
+            background-color:darken($color: tomato, $amount: 10%);
+        }
+}
+    }
+}
